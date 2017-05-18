@@ -45,7 +45,7 @@ public class FirstScreen extends AppCompatActivity {
         int[] tabIcons = {
                 R.mipmap.home,
                 R.mipmap.fire,
-                R.mipmap.youtubeee,
+                R.mipmap.youtube,
                 R.mipmap.play,
                 R.mipmap.manuser
         };
