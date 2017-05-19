@@ -1,13 +1,69 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="hello.example.com.youtube.PersonFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rONe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/personprofile"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        app:srcCompat="@mipmap/manuser" />
+
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/imageView"
+        android:text="Harjinder Singh Sidhu"
+        android:textAllCaps="false"
+        android:textColor="@color/toolBarTextColor" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/rONe">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>
+</RelativeLayout>
 
 </FrameLayout>

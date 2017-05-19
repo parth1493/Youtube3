@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="toolBar">#E62117</color>
     <color name="toolBarTextColor">#FFFFFF</color>
+    <color name="personprofile">#CCCCCC</color>
 </resources>

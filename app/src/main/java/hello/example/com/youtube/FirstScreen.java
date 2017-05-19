@@ -61,9 +61,9 @@ public class FirstScreen extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new HomeFragment(), "ONE");
         adapter.addFrag(new FireFragment(), "TWO");
-        adapter.addFrag(new PersonFragment(), "THREE");
-        adapter.addFrag(new PlayFragment(), "TWO");
         adapter.addFrag(new ChatFragment(), "THREE");
+        adapter.addFrag(new PlayFragment(), "TWO");
+        adapter.addFrag(new PersonFragment(), "THREE");
         viewPager.setAdapter(adapter);
     }
     class ViewPagerAdapter extends FragmentPagerAdapter {
