@@ -7,4 +7,6 @@
     <color name="toolBarTextColor">#FFFFFF</color>
     <color name="personprofile">#CCCCCC</color>
     <color name="gray">#C2C4C5</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>
