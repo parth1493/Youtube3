@@ -1,13 +1,116 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="hello.example.com.youtube.PlayFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:background="#FFFFFF"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/linOne"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="VIEW CONTACTS"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textColor="#215BEC"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"></FrameLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linOne"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            app:srcCompat="@mipmap/youtube1"
+            android:layout_weight="0.07" />
+        <LinearLayout
+
+            android:layout_width="308dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introducing a new way to share"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32 mins ago"
+              />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="326dp"
+                android:layout_height="243dp"
+                app:srcCompat="@mipmap/screenshot" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:text="Get started by sharing a video"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:id="@+id/textView10" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:text="Your shares video will show up here"
+            android:gravity="center"
+
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView9" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="ADD CONTACTS"
+            android:textColor="@color/toolBarTextColor"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#215BEC"/>
+
+    </RelativeLayout>
+
 
 </FrameLayout>

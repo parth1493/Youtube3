@@ -6,4 +6,5 @@
     <color name="toolBar">#E62117</color>
     <color name="toolBarTextColor">#FFFFFF</color>
     <color name="personprofile">#CCCCCC</color>
+    <color name="gray">#C2C4C5</color>
 </resources>
