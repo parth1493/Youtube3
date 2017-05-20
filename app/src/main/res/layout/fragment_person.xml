@@ -13,9 +13,12 @@
     <RelativeLayout
         android:id="@+id/rONe"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="110dp"
     android:background="@color/personprofile"
-    android:visibility="visible">
+    android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,22 +26,26 @@
         android:layout_width="52dp"
         android:layout_height="wrap_content"
 
+        app:srcCompat="@mipmap/manuser"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        app:srcCompat="@mipmap/manuser" />
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
 
-        android:layout_below="@+id/imageView"
+
         android:text="Harjinder Singh Sidhu"
         android:textAllCaps="false"
-        android:textColor="@color/toolBarTextColor" />
+        android:textColor="@color/toolBarTextColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -57,12 +64,153 @@
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
+    android:layout_marginTop="10dp"
     android:layout_below="@+id/rONe">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.00"
+            app:srcCompat="@mipmap/historyclockbutton" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="History"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@mipmap/multiplescreenplays" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="My videos"
+            android:layout_weight="0.06" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@mipmap/notificationsbutton" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="Notifications"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@mipmap/clock" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Watch Later"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Playlists (A-Z)"
+            android:layout_weight="0.07" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="20dp"
+            android:layout_height="21dp"
+            app:srcCompat="@mipmap/dropdownarro"
+            android:layout_weight="0.00"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@mipmap/like" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Liked Videos"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
 </LinearLayout>
 </RelativeLayout>
 
