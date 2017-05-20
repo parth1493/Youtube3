@@ -13,7 +13,7 @@ import android.view.ViewGroup;
  */
 public class ChatFragment extends Fragment {
 
-
+//HARU
     public ChatFragment() {
         // Required empty public constructor
     }
