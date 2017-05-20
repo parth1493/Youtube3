@@ -177,6 +177,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/gray"></FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Up next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Switch
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/switch2"
+                    android:theme="@style/BrandedSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Autoplay" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <!--<ImageView-->
+                    <!--android:id="@+id/img32"-->
+                    <!--app:srcCompat="@mipmap/apple"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<ImageView-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:id="@+id/img33"-->
+                    <!--app:srcCompat="@mipmap/apple"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="match_parent" />-->
+
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
