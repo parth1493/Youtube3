@@ -1,10 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="hello.example.com.youtube.Play">
 
-   
-</android.support.constraint.ConstraintLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearLayout2">
+       <ImageView
+           android:adjustViewBounds="true"
+           android:scaleType="centerCrop"
+           app:srcCompat="@mipmap/apple"
+           android:layout_width="match_parent"
+           android:layout_height="218dp" />
+   </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/like" />
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageView13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/thumbdown" />
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageView14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/shareoption" />
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageView15"
+                    android:layout_weight="0.25"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@mipmap/addto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:gravity="center_horizontal"
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.38"
+                    android:text="884" />
+
+                <TextView
+                    android:paddingLeft="35dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:text="984" />
+
+                <TextView
+                    android:paddingLeft="25dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Share" />
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Add to" />
+            </LinearLayout>
+            <FrameLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/imageView16"
+                    android:layout_weight="0.25"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@mipmap/appleone" />
+                <LinearLayout
+                    android:paddingTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_toRightOf="@+id/imageView16"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                    android:textSize="20sp"
+                    android:text="Apple Canada"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingTop="4dp"
+                        android:textSize="16sp"
+                        android:paddingLeft="8dp"
+                        android:text="23K Subscribers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_toLeftOf="@+id/text33"
+                    app:srcCompat="@mipmap/youtube"
+                    android:layout_centerVertical="true"
+                    android:layout_width="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="15dp" />
+                <TextView
+
+                    android:id="@+id/text33"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/toolBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUBSCRIBE"/>
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
