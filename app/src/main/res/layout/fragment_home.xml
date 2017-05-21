@@ -25,6 +25,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/rr"
                 android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="280dp">

@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,8 @@ public class FirstScreen extends AppCompatActivity {
         setContentView(R.layout.activity_first_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         searchId = (ImageView)findViewById(R.id.searchId);
         searchId.setOnClickListener(new View.OnClickListener() {
