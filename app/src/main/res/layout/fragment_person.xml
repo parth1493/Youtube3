@@ -6,220 +6,254 @@
     tools:context="hello.example.com.youtube.PersonFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <!--<android.support.design.widget.FloatingActionButton-->
+          <!--android:id="@+id/fab"-->
+          <!--android:layout_width="wrap_content"-->
+          <!--android:layout_height="wrap_content"-->
+          <!---->
+          <!--android:layout_margin="@dimen/fab_margin"-->
+          <!--app:backgroundTint="@color/toolBar"-->
+          <!--app:srcCompat="@mipmap/facetimebutton"/>-->
     <RelativeLayout
-        android:id="@+id/rONe"
-    android:layout_width="match_parent"
-    android:layout_height="110dp"
-    android:background="@color/personprofile"
-    android:visibility="visible"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-    <ImageView
-        android:id="@+id/imageView"
-
-        android:layout_width="52dp"
-        android:layout_height="wrap_content"
-
-        app:srcCompat="@mipmap/manuser"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-
-
-        android:text="Harjinder Singh Sidhu"
-        android:textAllCaps="false"
-        android:textColor="@color/toolBarTextColor"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_below="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
-        app:srcCompat="@android:drawable/arrow_down_float" />
-
-
-</RelativeLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="10dp"
-    android:layout_below="@+id/rONe">
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="10dp"
-        android:weightSum="1">
+        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_weight="0.00"
-            app:srcCompat="@mipmap/historyclockbutton" />
+        <RelativeLayout
+            android:id="@+id/rONe"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/personprofile"
+            android:visibility="visible">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="History"
-            android:layout_weight="0.05" />
+            <ImageView
+                android:id="@+id/imageView"
 
-    </LinearLayout>
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                app:srcCompat="@mipmap/manuser" />
 
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@mipmap/multiplescreenplays" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="29dp"
-            android:gravity="center"
-            android:text="My videos"
-            android:layout_weight="0.06" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
 
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@mipmap/notificationsbutton" />
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_below="@+id/imageView"
+                android:text="Harjinder Singh Sidhu"
+                android:textAllCaps="false"
+                android:textColor="@color/toolBarTextColor" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:gravity="center"
-            android:text="Notifications"
-            android:layout_weight="0.07" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                app:srcCompat="@android:drawable/arrow_down_float" />
 
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@mipmap/clock" />
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Watch Later"
-            android:layout_weight="0.07" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rONe"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
-    </LinearLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray"></FrameLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
 
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.00"
+                    app:srcCompat="@mipmap/historyclockbutton" />
 
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:text="History" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Playlists (A-Z)"
-            android:layout_weight="0.07" />
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="20dp"
-            android:layout_height="21dp"
-            app:srcCompat="@mipmap/dropdownarro"
-            android:layout_weight="0.00"
-            android:layout_gravity="center"/>
+            </LinearLayout>
 
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
 
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@mipmap/like" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@mipmap/multiplescreenplays" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Liked Videos"
-            android:layout_weight="0.07" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_weight="0.06"
+                    android:gravity="center"
+                    android:text="My videos" />
 
-    </LinearLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray"></FrameLayout>
-</LinearLayout>
-</RelativeLayout>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@mipmap/notificationsbutton" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_weight="0.07"
+                    android:gravity="center"
+                    android:text="Notifications" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@mipmap/clock" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.07"
+                    android:gravity="center"
+                    android:text="Watch Later" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.07"
+                    android:gravity="center"
+                    android:text="Playlists (A-Z)" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="20dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.00"
+                    app:srcCompat="@mipmap/dropdownarro" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@mipmap/like" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.07"
+                    android:gravity="center"
+                    android:text="Liked Videos" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></FrameLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/circlebutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="69dp"
+            app:srcCompat="@mipmap/facetimebutton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginEnd="52dp" />
+
+
+    </RelativeLayout>
+  </RelativeLayout>
 </FrameLayout>
